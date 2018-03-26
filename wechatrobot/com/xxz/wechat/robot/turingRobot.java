@@ -57,7 +57,7 @@ public class turingRobot {
 		
 		//冒泡排序测试
 		int [] array ={-10,-1,10,2,4,5,43,54,12,23,1,33,0,66,77,89,91,100,101,300};
-		for(int i=0;i<array.length-1;i++){
+		for(int i=0;i<array.length;i++){
 			for(int j=0;j<array.length-1-i;j++){//for(int j=0;j<array.length;j++)//第二种写法
 				if(array[j]>array[j+1]){			//if(array[i]>array[j])
 					int one=array[j];				//int one=array[j];

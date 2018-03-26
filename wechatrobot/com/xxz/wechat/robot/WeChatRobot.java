@@ -69,11 +69,11 @@ public class WeChatRobot extends HttpServlet {
 		throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
-		String signature =  request.getParameter("signature");
-	    String timestamp =  request.getParameter("timestamp");
-	    String nonce =  request.getParameter("nonce");
-	    String echostr =  request.getParameter("echostr");
-	    String token = "XXZ654962327ZXCVBNM"; // 这里填写自己的 token
+		String signature =  request.getParameter("signature");//微信加密签名，signature结合了开发者填写的token参数和请求中的timestamp参数、nonce参数。
+	    String timestamp =  request.getParameter("timestamp");//时间戳
+	    String nonce =  request.getParameter("nonce");//随机数
+	    String echostr =  request.getParameter("echostr");//随机字符串
+	    String token = "XXZ654962327ZXCVBNM"; // 这里填写自己的 token(微信配置)
 	    List<String> list = new ArrayList<String>();
 	    list.add(nonce);
 	    list.add(token);
